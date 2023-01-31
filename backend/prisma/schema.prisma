@@ -15,3 +15,13 @@ model User{
   password String
   nik String?
 }
+model Employee {
+  id Int @id @default(autoincrement())
+  nik String?
+  name String
+  address String
+}
+model Salary {
+  id Int @id @default(autoincrement())
+  date DateTime
+}
