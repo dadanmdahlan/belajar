@@ -14,14 +14,26 @@ model User{
   email String @unique
   password String
   nik String?
+  name String
 }
 model Employee {
   id Int @id @default(autoincrement())
-  nik String?
+  nik String? 
   name String
   address String
+  Npwp String
+  status String
+  departemen String
 }
 model Salary {
   id Int @id @default(autoincrement())
-  date DateTime
+  nik String? 
+  Salary Int
+  kehadiran String
+  overTime String
+  createdAt DateTime  @default(now())
+  penambahan String
+  pengurangan String
+  totalNet Int
 }
+
